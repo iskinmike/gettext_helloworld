@@ -47,10 +47,8 @@ int main()
     char *temp_char_buf = new char[locale_name.length()+1];
     strcpy(temp_char_buf, locale_name.c_str() );
     putenv(temp_char_buf);
-#else
-    putenv(locale_name.c_str());
 #endif
-    setlocale(LC_ALL,"");
+    setlocale(LC_MESSAGES,ini_locale_name.begin()->pItem);
 
     textdomain("helloworld");
     bindtextdomain("helloworld",locale_path.c_str());
