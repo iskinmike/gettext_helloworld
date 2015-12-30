@@ -1,38 +1,24 @@
-# Russian translations for test_build package.
-# Copyright (C) 2015 THE test_build'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the test_build package.
+# Russian translations for PACKAGE package.
+# Copyright (C) 2015 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 # Automatically generated, 2015.
 #
-#: main.cpp:19
 msgid ""
 msgstr ""
-"Project-Id-Version: test_build ver11.0\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-29 19:31+0500\n"
-"PO-Revision-Date: 2015-12-29 19:31+0500\n"
+"POT-Creation-Date: 2015-12-30 16:19+0500\n"
+"PO-Revision-Date: 2015-12-30 16:19+0500\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CP1251\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: main.cpp:20 main.cpp:21
-msgid "helloworld"
-msgstr ""
-
-#: main.cpp:21
-msgid "D:\\Locale"
-msgstr ""
-
-#: main.cpp:23
+#: main.cpp:57
 #, c-format
 msgid "Hello World\n"
-msgstr "Привет Мир\n"
-
-#: main.cpp:25
-#, c-format
-msgid "fail to set locale\n"
-msgstr ""
+msgstr "РџСЂРёРІРµС‚ РњРёСЂ\n"
