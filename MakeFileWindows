@@ -1,0 +1,36 @@
+# Environment
+CC=g++
+CCC=g++
+CXX=g++
+RM = rm
+MKDIR = mkdir
+
+# Constants
+OBJECTDIR = "build"
+
+LIBINTL_DIR = "C:\MinGW\lib\gettext"
+LIBINTL_INCLUDE = "C:\MinGW\include"
+SIMPLEINI_INCLUDE = "d:\TempRepo\simpleini"
+
+
+INCLUDE_DIR_FLAGS = -I${LIBINTL_DIR} -I${LIBINTL_INCLUDE} -I${SIMPLEINI_INCLUDE}
+
+FLAGS_MUTUAL = -Wall -m32 -std=c++11 
+
+.PHONY: debug
+
+debug: clean module
+
+clean:
+	@echo "-------------------------" 
+	${RM} main.o
+
+
+main.o:  main.cpp
+	@echo "-------------------------" 
+	$(COMPILE.cc) $(INCLUDE_DIR_FLAGS) -o main.o main.cpp
+
+
+module: main.o
+	@echo "-------------------------" 
+	${LINK.cc} -m32 -o helloworld.exe main.o ${INCLUDE_DIR_FLAGS} -lintl
